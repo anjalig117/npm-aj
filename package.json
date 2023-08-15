@@ -1,0 +1,26 @@
+{
+  "name": "qr-social-details",
+  "version": "1.0.0",
+  "description": "package that will generate qr code for social media details of user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjalig117/npm-aj.git"
+  },
+  "keywords": [
+    "qr-code",
+    "social-media"
+  ],
+  "author": "anjali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjalig117/npm-aj/issues"
+  },
+  "homepage": "https://github.com/anjalig117/npm-aj#readme",
+  "dependencies": {
+    "qrcode": "^1.5.3"
+  }
+}
