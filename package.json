@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/anjalig117/npm-aj#readme",
   "dependencies": {
+    "prompt-sync": "^4.2.0",
     "qrcode": "^1.5.3"
   }
 }

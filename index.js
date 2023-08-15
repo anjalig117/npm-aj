@@ -1,6 +1,9 @@
 const QRCode = require('qrcode')
+const prompt = require("prompt-sync")({ sigint: true });
 
 function generateQr(){
+    const isQr = prompt("Do you want to create qr for the user details (y/n) ");
+
     let data = {
         name: 'Anjali Goel',
         reach_me: 'anjaligoel117@gmail.com',
@@ -11,13 +14,16 @@ function generateQr(){
 
     let userData = JSON.stringify(data);
 
-    QRCode.toString(userData, { type: 'terminal' },
+    if (isQr == 'y'){
+        QRCode.toString(userData, { type: 'terminal' },
         function (err, QRCode) {
             if (err) return console.log("error is ", err)
 
             console.log(QRCode)
         }
     )
+    }   
 }
 
-module.exports = generateQr
+generateQr()
+// module.exports = generateQr
